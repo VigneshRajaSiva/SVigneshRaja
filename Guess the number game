@@ -1,0 +1,15 @@
+import random
+num = random.randint(1,5)
+att=0
+guess=int(input ("guess the number"))
+while num!=guess:
+    for att in range(1,10):
+        if num<guess:
+            print("guess number is higher")
+        else:
+            print("guess number is lower")
+        guess=int(input ("try again"))
+    print("you lost")
+    break
+if(num==guess):
+    print("you win")
